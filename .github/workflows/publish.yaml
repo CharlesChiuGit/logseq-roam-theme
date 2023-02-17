@@ -4,7 +4,7 @@ on:
     tags:
       - "*"
 env:
-  PLUGIN_NAME: logseq-roam_theme
+  PLUGIN_NAME: logseq-roam-theme
 jobs:
   build:
     runs-on: ubuntu-latest
