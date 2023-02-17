@@ -1,0 +1,25 @@
+name: Build plugin
+on:
+  push:
+    tags:
+      - "*"
+env:
+  PLUGIN_NAME: logseq-roam_theme
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build
+        id: build
+        run: |
+          mkdir ${{ env.PLUGIN_NAME }} # folder for zip
+          cp LICENSE README.md custom.css package.json ${{ env.PLUGIN_NAME }} # move build assets
+          zip -r ${{ env.PLUGIN_NAME }}-${{ github.ref_name }}.zip ${{ env.PLUGIN_NAME }} # create zip
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        id: create_release
+        with:
+          draft: true
+          files: |
+            ${{ env.PLUGIN_NAME }}-${{ github.ref_name }}.zip
