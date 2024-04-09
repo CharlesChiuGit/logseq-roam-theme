@@ -1067,7 +1067,6 @@ hr {
 .block-content[data-type="annotation"] .prefix-link > span > strong {
   font-weight: 200;
   font-size: 0.75em;
-  opacity: 0.5;
   color: var(--bd, #8abbbb);
   opacity: var(--opc1);
 }
@@ -1100,7 +1099,6 @@ hr {
 
 .youtube-timestamp {
   font-size: 0.75em;
-  opacity: 0.5;
   font-weight: 200;
   color: var(--bd, #8abbbb);
   opacity: var(--opc1);
