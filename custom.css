@@ -337,31 +337,31 @@ blockquote {
   gap: 0;
 }
 
-.sidebar-item > div > div:not(initial):is(.justify-between) > div > .ml-1 {
-  margin-left: 0;
-  font-weight: 400;
-}
+/* .sidebar-item > div > div:not(initial):is(.justify-between) > div > .ml-1 { */
+/*   margin-left: 0; */
+/*   font-weight: 400; */
+/* } */
 
-.sidebar-item
-  > div
-  > div:not(initial):is(.justify-between)
-  > div
-  > .ml-1
-  > .mt-1 {
-  margin-left: 0;
-  margin-top: 0;
-}
+/* .sidebar-item */
+/*   > div */
+/*   > div:not(initial):is(.justify-between) */
+/*   > div */
+/*   > .ml-1 */
+/*   > .mt-1 { */
+/*   margin-left: 0; */
+/*   margin-top: 0; */
+/* } */
 
-.sidebar-item
-  > div
-  > div:not(initial):is(.justify-between)
-  > div
-  > .ml-1
-  > .mt-1
-  > .my-2 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+/* .sidebar-item */
+/*   > div */
+/*   > div:not(initial):is(.justify-between) */
+/*   > div */
+/*   > .ml-1 */
+/*   > .mt-1 */
+/*   > .my-2 { */
+/*   margin-top: 0; */
+/*   margin-bottom: 0; */
+/* } */
 
 .sidebar-item > div > div > div > a.pr-1 {
   padding-right: 4px;
